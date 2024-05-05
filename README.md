@@ -4,6 +4,7 @@
 ## Apresentação
 
 Olá, sou Wendel Dos Santos Coelho de Vitório Da Conquista e atualmente estou no terceiro semestre no curso de Bacharelado de Sistemas De Informação no IFBA, entusiasta da programação e tecnologias.
+
 Além dos estudos, sou apaixonado por explorar novas tecnologias e tendências do mercado. Estou sempre em busca de aprimorar meus conhecimentos e aprimorar minhas habilidades através de cursos online, projetos e atividades decorrentes da universidade. Acredito que o apredizado autodidata e constante são essenciais para acompanhar o ritmo das mudanças no setor tecnológico.
 
 ## Sprints
