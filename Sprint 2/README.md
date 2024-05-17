@@ -1,7 +1,7 @@
 ## Exercicios
 [Link para Exercicios](https://github.com/WendeldsCoelho/Programa-De-Bolsas-Compass-Uol/tree/main/Sprint%202/Exercicios)
 
-[Link para Exercicios ||](https://github.com/WendeldsCoelho/Programa-De-Bolsas-Compass-Uol/tree/main/Sprint%202/Exercicos%20ll)
+[Link para Exercicios II](https://github.com/WendeldsCoelho/Programa-De-Bolsas-Compass-Uol/tree/main/Sprint%202/Exercicos%20ll)
 ## Evidências
 
 
