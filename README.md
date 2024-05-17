@@ -11,6 +11,7 @@ Além dos estudos, sou apaixonado por explorar novas tecnologias e tendências d
 
 - Linux (c/terminal, Shell)
 - Git e GitHub (c/ gist e Github Pages)
+- SQL para Análise de Dados
 
 ## Sprints
 
