@@ -1,6 +1,6 @@
--- Para normalizar eu removi os grupos repetitivos  e removi se todos os campos tinha apenas um valor no registro
+-- Para normalizar eu removi os grupos repetitivos  e olhei se todos os campos tinha apenas um valor no registro
 
--- Após, eu garati que todos os atributos não chave depedam da chave priária forma completa
+-- Após, eu garati que todos os atributos não chave dependiam da chave priária forma completa
 
 -- Subdividi os dados da tabela tb_locacao e removi dependências nas quais os atributos não chave dependem precisavam 
 
@@ -156,4 +156,6 @@ SELECT * FROM dim_Carro;
 SELECT * FROM dim_Data;
 SELECT * FROM fato_Locacao;
 
+[Modelo Relacional](https://github.com/WendeldsCoelho/Programa-De-Bolsas-Compass-Uol/blob/main/assets/img/Sprint%202/Modelo%20Relacional.jpeg?raw=true)
 
+[Modelo Dimensional](https://github.com/WendeldsCoelho/Programa-De-Bolsas-Compass-Uol/blob/main/assets/img/Sprint%202/Modelo%20Dimensional.jpeg?raw=true)
