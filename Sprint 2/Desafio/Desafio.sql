@@ -2,7 +2,7 @@
 
 -- Após, eu garanti que todos os atributos não chave dependiam da chave priária forma completa
 
--- Subdividi os dados da tabela tb_locacao e removi dependências nas quais os atributos não chave dependem precisavam 
+-- Subdividi os dados da tabela tb_locacao e removi dependências dos atributos não chave em relação a outros atributos que não seja sua chave primária
 
 CREATE TABLE Combustivel AS 
 SELECT DISTINCT 
