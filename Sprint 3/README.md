@@ -10,6 +10,8 @@
 
 ## Certificados
 
+![Curso AWS](https://github.com/WendeldsCoelho/Programa-De-Bolsas-Compass-Uol/blob/main/assets/img/Sprint%203/AWS%20cloud%20economics.jpeg)
+
 ## Desafio
 
 [Link para Desafio](https://github.com/WendeldsCoelho/Programa-De-Bolsas-Compass-Uol/tree/main/Sprint%203/desafio)
