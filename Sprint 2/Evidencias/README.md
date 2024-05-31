@@ -20,6 +20,8 @@
 
 ![Tabela Vendedor](https://github.com/WendeldsCoelho/Programa-De-Bolsas-Compass-Uol/blob/main/assets/img/Sprint%202/Tabelas/Tabela%20Vendedor.jpeg)
 
+#
+
 # Modelo Dimensinal
 
 ## Dimensão Carro
