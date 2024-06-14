@@ -4,7 +4,7 @@
 
 ## Evidências
 
-[Link para Exercicios](https://github.com/WendeldsCoelho/Programa-De-Bolsas-Compass-Uol/tree/main/Sprint4/Evid%C3%AAncias)
+[Link para Evidências](https://github.com/WendeldsCoelho/Programa-De-Bolsas-Compass-Uol/tree/main/Sprint4/Evid%C3%AAncias)
 
 ## Certificados
 
