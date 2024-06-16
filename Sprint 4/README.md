@@ -1,10 +1,10 @@
 ## Exercicios
 
-[Link para Exercicios](https://github.com/WendeldsCoelho/Programa-De-Bolsas-Compass-Uol/tree/main/Sprint4/Exercicios)
+[Link para Exercicios](https://github.com/WendeldsCoelho/Programa-De-Bolsas-Compass-Uol/tree/main/Sprint%204/Exercicios)
 
 ## Evidências
 
-[Link para Evidências](https://github.com/WendeldsCoelho/Programa-De-Bolsas-Compass-Uol/tree/main/Sprint4/Evid%C3%AAncias)
+[Link para Evidências](https://github.com/WendeldsCoelho/Programa-De-Bolsas-Compass-Uol/tree/main/Sprint%204/Evid%C3%AAncias)
 
 ## Certificados
 
@@ -14,4 +14,4 @@
 
 ## Desafio
 
-[Link para Desafio](https://github.com/WendeldsCoelho/Programa-De-Bolsas-Compass-Uol/tree/main/Sprint4/Desafio)
+[Link para Desafio](https://github.com/WendeldsCoelho/Programa-De-Bolsas-Compass-Uol/tree/main/Sprint%204/Desafio)
