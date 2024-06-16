@@ -13,6 +13,7 @@ Além dos estudos, sou apaixonado por explorar novas tecnologias e tendências d
 - Git e GitHub (c/ gist e Github Pages)
 - SQL para Análise de Dados
 - Python
+- Docker
 
 ## Sprints
 
@@ -21,3 +22,5 @@ Além dos estudos, sou apaixonado por explorar novas tecnologias e tendências d
 [Sprint 2](https://github.com/WendeldsCoelho/Programa-De-Bolsas-Compass-Uol/tree/main/Sprint%202/README.md)
 
 [Sprint 3](https://github.com/WendeldsCoelho/Programa-De-Bolsas-Compass-Uol/tree/main/Sprint%203)
+
+[Sprint 4](https://github.com/WendeldsCoelho/Programa-De-Bolsas-Compass-Uol/tree/main/Sprint%204)
