@@ -13,7 +13,7 @@ def desafio_sprint(evento):
     # query cumprindo todos os requisitos solicitados, abaixo a explicação do resultado.
     # 1.(COUNT(Mes) as qtd_mes) trará uma contagem dos meses com quantitativo maior que 250, diferente do mês de janeiro e com mais de 4 caracteres.
     # 2.(SUM(CASE WHEN CAST(Quantitativo AS INT) < 300 THEN 1 ELSE 0 END) as soma_quantitativo_menores_300) soma de quantos meses possuem quantitativo menor que 300 e são diferentes de janeiro
-    # 3.(UTCNOW())a data e hora atuais em UTC.
+    # 3.(UTCNOW()) data e hora atuais em UTC.
     query = """
     SELECT 
     COUNT(Mes) as qtd_mes,
