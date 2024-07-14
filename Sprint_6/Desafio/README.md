@@ -1,5 +1,10 @@
 # Desafio
 
+### Para resolver o desafio foi necessário:
+- Criar o arquivo .py no qual eu coloquei a função para o upload e também vinculei meu bucket e as chaves de acesso.
+- Criei o Dockerfile para executar o arquivo .py.
+- Por fim, executei o container, o que resultou no upload concluído apresentado abaixo na imagem na sessão "Prints Desafio"
+
 ## Prints Desafio
 
 ### Execução do container
