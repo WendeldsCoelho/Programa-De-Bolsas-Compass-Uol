@@ -12,7 +12,7 @@
 
 ## Perguntas Escolhidas
 
--  Quais são os diretoers que mais dirigiram filmes de ação e aventura?
+-  Quais são os diretores que mais dirigiram filmes de ação e aventura?
   Uma consulta e filtragem de dados para obter o número de filme dirigidos por cada diretor.
 
 -  Maiores notas médias de ator/atriz principal por séries?
