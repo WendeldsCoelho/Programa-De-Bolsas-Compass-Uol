@@ -1,0 +1,14 @@
+Vou trazer os comandos executados na VM UBUNTU para o exercício de apache spark. 
+Mais detalhes do resultado contidos em evidências.
+
+from pyspark import SparkContext
+SparkContext = SparkContext.getOrCreate()
+
+counts = (arquivo.flatMap(lambda linha : linha.split(" ")))
+                  .filter(lambda palavra : palavra != "")
+                  .map(lambda palavra: (palavra,1))
+                  .reduceByKey(lambda a, b: a + b)
+                
+for word, count in counts.collect():
+    print(f"{word}: {count} vezes")
+
