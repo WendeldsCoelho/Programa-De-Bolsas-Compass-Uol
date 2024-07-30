@@ -11,5 +11,5 @@
 
 Arquivo principal do desafio:
 
-![Processamentos de Vendas](https://github.com/WendeldsCoelho/Programa-De-Bolsas-Compass-Uol/blob/main/assets/img/Sprint%201/processamentos_de_vendas.jpeg?raw=true)
+![Processamentos de Vendas](https://github.com/WendeldsCoelho/Programa-De-Bolsas-Compass-Uol/blob/main/Sprint%201/Desafio/processamentos_de_vendas.jpeg)
 
