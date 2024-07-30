@@ -7,7 +7,7 @@
 
 ## Certificados
 
-[Curso AWS](https://github.com/WendeldsCoelho/Programa-De-Bolsas-Compass-Uol/tree/main/Sprint%202/Certificados)
+[Link para certificados](https://github.com/WendeldsCoelho/Programa-De-Bolsas-Compass-Uol/tree/main/Sprint%202/Certificados)
 
 ## Desafio
 [Link para Desafio](https://github.com/WendeldsCoelho/Programa-De-Bolsas-Compass-Uol/tree/main/Sprint%202/Desafio)
