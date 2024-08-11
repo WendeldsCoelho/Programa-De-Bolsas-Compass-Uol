@@ -1,0 +1,116 @@
+# Etapa 1
+from pyspark.sql import SparkSession
+
+from pyspark import SparkContext, SQLContext
+
+spark = SparkSession.builder \
+    .master("local[*]") \
+    .appName("Exercicio Intro") \
+    .getOrCreate()
+
+df_nomes = spark.read.csv("nomes_aleatorios.txt", header=True, inferSchema=True)
+
+df_nomes.show(5)
+
+# Etapa 2
+df_nomes = df_nomes.withColumnRenamed("nome", "Nomes")
+
+df_nomes.printSchema()
+
+df_nomes.show(10)
+
+# Etapa 3
+
+from pyspark.sql.functions import expr
+
+# Adicionando a coluna Escolaridade
+df_nomes = df_nomes.withColumn(
+    "Escolaridade",
+    expr("CASE WHEN rand() < 0.35 THEN 'Fundamental' WHEN rand() < 0.65 THEN 'Medio' ELSE 'Superior' END")
+)
+
+df_nomes.show(10)
+
+# Etapa 4
+
+from pyspark.sql.functions import rand, when, lit
+
+# Lista de países da América do Sul
+paises = ["Argentina", "Bolívia", "Brasil", "Chile", "Colômbia", "Equador", 
+          "Guiana", "Paraguai", "Peru", "Suriname", "Uruguai", "Venezuela", 
+          "Guiana Francesa"]
+
+# dataframe com a lista de países e índices
+paises_df = spark.createDataFrame(enumerate(paises, start=1), ["indice", "pais"])
+
+# Adicionando a coluna "indice" ao df_nomes
+df_nomes = df_nomes.withColumn("indice", (rand() * len(paises)).cast("int") + 1)
+
+# Juntando os dataframes para adicionar a coluna "Pais" 
+df_nomes = df_nomes.join(paises_df, "indice").drop("indice")
+
+df_nomes.show(10)
+
+# Etapa 5
+
+df_nomes = df_nomes.withColumn(
+    "AnoNascimento",
+    expr("CAST(FLOOR(rand() * (2010 - 1945 + 1)) + 1945 AS INT)")
+)
+
+df_nomes.show(10)
+
+# Etapa 6
+
+df_select = df_nomes.filter(df_nomes.AnoNascimento >= 2000)
+
+df_select.show(10)
+
+# Etapa 7
+
+df_nomes.createOrReplaceTempView("pessoas")
+
+# Selecionando pessoas nascidas a partir de 2000 
+df_select_sql = spark.sql("SELECT * FROM pessoas WHERE AnoNascimento >= 2000")
+
+df_select_sql.show(10)
+
+# Etapa 8
+
+df_millennials = df_nomes.filter((df_nomes.AnoNascimento >= 1980) & (df_nomes.AnoNascimento <= 1994))
+
+# Contando o número de Millennials
+millennials_cont = df_millennials.count()
+
+print(f"Quantidade de pessoas da Geração Millennials: {millennials_cont}")
+
+# Etapa 9
+
+millennials_cont_sql = spark.sql("SELECT COUNT(*) FROM pessoas WHERE AnoNascimento BETWEEN 1980 AND 1994").collect()[0][0]
+
+print(f"Quantidade de pessoas da Geração Millennials (SQL): {millennials_cont_sql}")
+
+
+# Etapa 10 
+
+spark.sql("""
+CREATE OR REPLACE TEMP VIEW pessoas_com_geracao AS
+SELECT *,
+    CASE 
+        WHEN AnoNascimento BETWEEN 1944 AND 1964 THEN 'Baby Boomers'
+        WHEN AnoNascimento BETWEEN 1965 AND 1979 THEN 'Geracao X'
+        WHEN AnoNascimento BETWEEN 1980 AND 1994 THEN 'Millennials'
+        WHEN AnoNascimento BETWEEN 1995 AND 2015 THEN 'Geracao Z'
+        ELSE 'Outra'
+    END AS Geracao
+FROM pessoas
+""")
+
+df_pais_geracao = spark.sql("""
+SELECT Pais, Geracao, COUNT(*) as Quantidade
+FROM pessoas_com_geracao
+GROUP BY Pais, Geracao
+ORDER BY Pais, Geracao
+""")
+
+df_pais_geracao.show()
