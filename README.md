@@ -14,7 +14,8 @@ Além dos estudos, sou apaixonado por explorar novas tecnologias e tendências d
 - SQL para Análise de Dados
 - Python
 - Docker
-- AWS (S3,LAMBDA, ATHENA)
+- AWS (S3,LAMBDA, ATHENA, GLUE)
+- Spark com Pyspark
 
 ## Sprints
 
@@ -31,3 +32,5 @@ Além dos estudos, sou apaixonado por explorar novas tecnologias e tendências d
 [Sprint 6](https://github.com/WendeldsCoelho/Programa-De-Bolsas-Compass-Uol/tree/main/Sprint_6)
 
 [Sprint 7](https://github.com/WendeldsCoelho/Programa-De-Bolsas-Compass-Uol/tree/main/Sprint_7)
+
+[Sprint 8](https://github.com/WendeldsCoelho/Programa-De-Bolsas-Compass-Uol/tree/main/Sprint_8)
