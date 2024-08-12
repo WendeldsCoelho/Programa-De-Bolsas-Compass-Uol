@@ -35,37 +35,30 @@
 
 # Consultas e seus respectivos resultados no AWS Athena para teste dos arquivos.
 
-### Filmes csv
+### Filmes CSV
 
 - SELECT DISTINCT titulopincipal, anolancamento, genero, notamedia FROM movies LIMIT 50;
 
 ![filmes csv](https://github.com/WendeldsCoelho/Programa-De-Bolsas-Compass-Uol/blob/main/Sprint_8/Evid%C3%AAncias/Desafio/athena-result-movies-csv.jpeg)
 
 
-### Series csv
+### Series CSV
 
 - SELECT DISTINCT titulopincipal, anolancamento, genero, notamedia FROM series LIMIT 50;
 
 ![series csv](https://github.com/WendeldsCoelho/Programa-De-Bolsas-Compass-Uol/blob/main/Sprint_8/Evid%C3%AAncias/Desafio/athena-result-series-csv.jpeg)
 
-### Filmes json
+### Filmes JSON
 
 - SELECT * FROM movies_450b144634bbf5b5c70a085634d252c3 LIMIT 15;
 
 ![filmes json](https://github.com/WendeldsCoelho/Programa-De-Bolsas-Compass-Uol/blob/main/Sprint_8/Evid%C3%AAncias/Desafio/athena-result-movies-json.jpeg)
 
-### Series json
+### Series JSON
 
 - SELECT * FROM tv_shows LIMIT 15;
 
 ![series json](https://github.com/WendeldsCoelho/Programa-De-Bolsas-Compass-Uol/blob/main/Sprint_8/Evid%C3%AAncias/Desafio/athena-result-series-json.jpeg)
-
-
-
-
-
-
-
 
 ### As perguntas do desafio permaneceram.
 
