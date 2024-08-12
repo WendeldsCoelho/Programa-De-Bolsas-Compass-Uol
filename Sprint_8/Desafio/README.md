@@ -33,7 +33,7 @@
 
 ![series](https://github.com/WendeldsCoelho/Programa-De-Bolsas-Compass-Uol/blob/main/Sprint_8/Evid%C3%AAncias/Desafio/bucket_series_json.jpeg)
 
-# Consultas e seus respectivos resultados no AWS Athena para teste dos arquvis.
+# Consultas e seus respectivos resultados no AWS Athena para teste dos arquivos.
 
 ### Filmes csv
 
