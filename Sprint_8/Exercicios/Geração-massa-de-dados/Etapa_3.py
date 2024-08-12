@@ -1,6 +1,4 @@
 import random 
-import time 
-import os
 import names
 
 random.seed(40)

@@ -1,5 +1,5 @@
 lista_animais = ["Golfinho", "Falcão", "Gorila", "Jaguar", "Lobo",
-    "Urso", "Raposa", "Águia", "Cervo", "Tubarão",
+    "Urso", "Raposa", "Elefante", "Cervo", "Tubarão",
     "Tucano", "Pato", "Lontra", "Javali", "Antílope",
     "Tartaruga", "Baleia", "Pinguim", "Flamingo", "Hiena"]
 
