@@ -32,36 +32,36 @@
 
 ![result1](https://github.com/WendeldsCoelho/Programa-De-Bolsas-Compass-Uol/blob/main/Sprint_9/Evid%C3%AAncias/Desafio/teste_athena_pergunta1.jpeg)
 
-###  Maiores notas médias de ator/atriz principal por séries com pelo menos duas séries atuadas
+### Maiores notas médias de ator/atriz principal por séries com pelo menos duas séries atuadas
 
-- Consulta sem cortes:
-  WITH Participacoes AS (  \**
-    SELECT \**
-        p.nome AS ator_atriz,
-        COUNT(o.obra_id) AS total_participacoes
-    FROM dim_pessoa p
-    JOIN dim_obra o ON p.obra_id = o.obra_id
-    WHERE o.categoria = 'Filme' AND p.tipo_participacao = 'Ator'
-    GROUP BY p.nome
-    HAVING COUNT(o.obra_id) >= 2
-),
-NotasMedias AS (
-    SELECT
-        p.nome AS ator_atriz,
-        AVG(a.media_avaliacao) AS media_nota
-    FROM dim_pessoa p
-    JOIN dim_obra o ON p.obra_id = o.obra_id
-    JOIN fato_avaliacao a ON o.obra_id = a.obra_id
-    WHERE p.tipo_participacao = 'Ator' AND o.categoria = 'Série'
-    GROUP BY p.nome
-)
-SELECT
-    nm.ator_atriz,
-    nm.media_nota
-FROM NotasMedias nm
-JOIN Participacoes p ON nm.ator_atriz = p.ator_atriz
-ORDER BY nm.media_nota DESC
-LIMIT 10
+- Consulta sem cortes:  
+  WITH Participacoes AS (  
+    SELECT  
+        p.nome AS ator_atriz,  
+        COUNT(o.obra_id) AS total_participacoes  
+    FROM dim_pessoa p  
+    JOIN dim_obra o ON p.obra_id = o.obra_id  
+    WHERE o.categoria = 'Filme' AND p.tipo_participacao = 'Ator'  
+    GROUP BY p.nome  
+    HAVING COUNT(o.obra_id) >= 2  
+  ),  
+  NotasMedias AS (  
+    SELECT  
+        p.nome AS ator_atriz,  
+        AVG(a.media_avaliacao) AS media_nota  
+    FROM dim_pessoa p  
+    JOIN dim_obra o ON p.obra_id = o.obra_id  
+    JOIN fato_avaliacao a ON o.obra_id = a.obra_id  
+    WHERE p.tipo_participacao = 'Ator' AND o.categoria = 'Série'  
+    GROUP BY p.nome  
+  )  
+  SELECT  
+      nm.ator_atriz,  
+      nm.media_nota  
+  FROM NotasMedias nm  
+  JOIN Participacoes p ON nm.ator_atriz = p.ator_atriz  
+  ORDER BY nm.media_nota DESC  
+  LIMIT 10
 
 ![result2](https://github.com/WendeldsCoelho/Programa-De-Bolsas-Compass-Uol/blob/main/Sprint_9/Evid%C3%AAncias/Desafio/teste_athena_pergunta2.jpeg)
 
