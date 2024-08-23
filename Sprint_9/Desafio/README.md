@@ -35,8 +35,8 @@
 ###  Maiores notas médias de ator/atriz principal por séries com pelo menos duas séries atuadas
 
 - Consulta sem cortes:
-  WITH Participacoes AS (
-    SELECT
+  WITH Participacoes AS (  \**
+    SELECT \**
         p.nome AS ator_atriz,
         COUNT(o.obra_id) AS total_participacoes
     FROM dim_pessoa p
