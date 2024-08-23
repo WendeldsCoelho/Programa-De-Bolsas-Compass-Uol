@@ -1,64 +1,40 @@
 # Explicação
 
 ### Para resolver o desafio:
-- Criei dois jobs no AWS Glue, para os arquivos CSV e JSON.
-- Com esses scripts eu modifiquei a formato dos arquivos para parquet e também filtrei dados dos arquivos presentes no CSV.
-- Depois de executar ambos os jobs com sucesso, verifiquei a camada TRUSTRED preenchida pelos dados.
-- Por fim, criei tabelas no AWS Athena para verificar por meio de consultas a estrutura dos dados de filmes e series. 
+- Criei um job no AWS Glue para a camada refined.
+- Com esse script eu agrupei os dados da camada trusted, seguindo os princípios de modelagem multidimensional.
+- Depois de executar  o job com sucesso, verifiquei a camada REFINED preenchida pelos dados no s3.
+- Por fim, criei tabelas no AWS Athena para verificar por meio de consultas a estrutura dos dados. 
 
 
 # PRINTS
 
-### JOB CSV
+### JOB REFINED
 
-![job csv](https://github.com/WendeldsCoelho/Programa-De-Bolsas-Compass-Uol/blob/main/Sprint_8/Evid%C3%AAncias/Desafio/Job_csv.jpeg)
+![job refined](https://github.com/WendeldsCoelho/Programa-De-Bolsas-Compass-Uol/blob/main/Sprint_9/Evid%C3%AAncias/Desafio/job_refined.jpeg)
 
-### JOB JSON
+### RUN JOB REFINED
 
-![job json](https://github.com/WendeldsCoelho/Programa-De-Bolsas-Compass-Uol/blob/main/Sprint_8/Evid%C3%AAncias/Desafio/Job_json.jpeg)
+![job refined](https://github.com/WendeldsCoelho/Programa-De-Bolsas-Compass-Uol/blob/main/Sprint_9/Evid%C3%AAncias/Desafio/run_job_refined.jpeg)
 
-### PASTA MOVIES CSV
+### S3 CAMADA REFINED
 
-![movies](https://github.com/WendeldsCoelho/Programa-De-Bolsas-Compass-Uol/blob/main/Sprint_8/Evid%C3%AAncias/Desafio/bucket_movies_csv.jpeg)
+![s3 refined](https://github.com/WendeldsCoelho/Programa-De-Bolsas-Compass-Uol/blob/main/Sprint_9/Evid%C3%AAncias/Desafio/camada_refined_s3.jpeg)
 
-### PASTA MOVIES JSON
+### MODELO MULTIDIMENSIONAL 
 
-![movies](https://github.com/WendeldsCoelho/Programa-De-Bolsas-Compass-Uol/blob/main/Sprint_8/Evid%C3%AAncias/Desafio/bucket_movies_json.jpeg)
+![multidimensional](https://github.com/WendeldsCoelho/Programa-De-Bolsas-Compass-Uol/blob/main/Sprint_9/Evid%C3%AAncias/Desafio/sprint9_modelo_multidimensional.jpeg)
 
-### PASTA SERIES CSV
-
-![series](https://github.com/WendeldsCoelho/Programa-De-Bolsas-Compass-Uol/blob/main/Sprint_8/Evid%C3%AAncias/Desafio/bucket_series_csv.jpeg)
-
-### PASTA SERIES JSON
-
-![series](https://github.com/WendeldsCoelho/Programa-De-Bolsas-Compass-Uol/blob/main/Sprint_8/Evid%C3%AAncias/Desafio/bucket_series_json.jpeg)
 
 # Consultas e seus respectivos resultados no AWS Athena para teste dos arquivos.
 
-### Filmes CSV
+### Quais são os diretores que mais dirigiram filmes de ação e aventura com media_avaliacao > 7
 
-- SELECT DISTINCT titulopincipal, anolancamento, genero, notamedia FROM movies LIMIT 50;
+![result1](https://github.com/WendeldsCoelho/Programa-De-Bolsas-Compass-Uol/blob/main/Sprint_9/Evid%C3%AAncias/Desafio/teste_athena_pergunta1.jpeg)
 
-![filmes csv](https://github.com/WendeldsCoelho/Programa-De-Bolsas-Compass-Uol/blob/main/Sprint_8/Evid%C3%AAncias/Desafio/athena-result-movies-csv.jpeg)
+###  Maiores notas médias de ator/atriz principal por séries com pelo menos duas séries atuadas
 
-
-### Series CSV
-
-- SELECT DISTINCT titulopincipal, anolancamento, genero, notamedia FROM series LIMIT 50;
-
-![series csv](https://github.com/WendeldsCoelho/Programa-De-Bolsas-Compass-Uol/blob/main/Sprint_8/Evid%C3%AAncias/Desafio/athena-result-series-csv.jpeg)
-
-### Filmes JSON
-
-- SELECT * FROM movies_450b144634bbf5b5c70a085634d252c3 LIMIT 15;
-
-![filmes json](https://github.com/WendeldsCoelho/Programa-De-Bolsas-Compass-Uol/blob/main/Sprint_8/Evid%C3%AAncias/Desafio/athena-result-movies-json.jpeg)
-
-### Series JSON
-
-- SELECT * FROM tv_shows LIMIT 15;
-
-![series json](https://github.com/WendeldsCoelho/Programa-De-Bolsas-Compass-Uol/blob/main/Sprint_8/Evid%C3%AAncias/Desafio/athena-result-series-json.jpeg)
+[result2](https://github.com/WendeldsCoelho/Programa-De-Bolsas-Compass-Uol/blob/main/Sprint_9/Evid%C3%AAncias/Desafio/teste_athena_pergunta2.jpeg)
 
 ### As perguntas do desafio permaneceram.
 
