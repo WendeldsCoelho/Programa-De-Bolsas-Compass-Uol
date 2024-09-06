@@ -14,7 +14,7 @@ Além dos estudos, sou apaixonado por explorar novas tecnologias e tendências d
 - SQL para Análise de Dados
 - Python
 - Docker
-- AWS (S3,LAMBDA, ATHENA, GLUE)
+- AWS (S3,LAMBDA, ATHENA, GLUE, QUICKSIGHT)
 - Spark com Pyspark
 
 ## Sprints
