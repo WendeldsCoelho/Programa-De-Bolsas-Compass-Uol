@@ -34,3 +34,7 @@ Além dos estudos, sou apaixonado por explorar novas tecnologias e tendências d
 [Sprint 7](https://github.com/WendeldsCoelho/Programa-De-Bolsas-Compass-Uol/tree/main/Sprint_7)
 
 [Sprint 8](https://github.com/WendeldsCoelho/Programa-De-Bolsas-Compass-Uol/tree/main/Sprint_8)
+
+[Sprint 9](https://github.com/WendeldsCoelho/Programa-De-Bolsas-Compass-Uol/tree/main/Sprint_9)
+
+[Sprint 10](https://github.com/WendeldsCoelho/Programa-De-Bolsas-Compass-Uol/tree/main/Sprint_10)
