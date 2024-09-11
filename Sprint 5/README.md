@@ -1,5 +1,7 @@
 ## Exercicios
 
+[Exercicios](https://github.com/WendeldsCoelho/Programa-De-Bolsas-Compass-Uol/tree/main/Sprint%205/Exercicios)
+
 ## Evidências 
 
 [Link para Evidências do Desafio](https://github.com/WendeldsCoelho/Programa-De-Bolsas-Compass-Uol/blob/main/Sprint%205/Desafio/README.md)
