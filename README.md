@@ -19,15 +19,15 @@ Além dos estudos, sou apaixonado por explorar novas tecnologias e tendências d
 
 ## Sprints
 
-[Sprint 1](https://github.com/WendeldsCoelho/Programa-De-Bolsas-Compass-Uol/blob/main/Sprint1/README.md)
+[Sprint 1](https://github.com/WendeldsCoelho/Programa-De-Bolsas-Compass-Uol/tree/main/Sprint_1)
 
-[Sprint 2](https://github.com/WendeldsCoelho/Programa-De-Bolsas-Compass-Uol/tree/main/Sprint2/README.md)
+[Sprint 2](https://github.com/WendeldsCoelho/Programa-De-Bolsas-Compass-Uol/tree/main/Sprint_2)
 
-[Sprint 3](https://github.com/WendeldsCoelho/Programa-De-Bolsas-Compass-Uol/tree/main/Sprint3)
+[Sprint 3](https://github.com/WendeldsCoelho/Programa-De-Bolsas-Compass-Uol/tree/main/Sprint_3)
 
-[Sprint 4](https://github.com/WendeldsCoelho/Programa-De-Bolsas-Compass-Uol/tree/main/Sprint4)
+[Sprint 4](https://github.com/WendeldsCoelho/Programa-De-Bolsas-Compass-Uol/tree/main/Sprint_4)
 
-[Sprint 5](https://github.com/WendeldsCoelho/Programa-De-Bolsas-Compass-Uol/tree/main/Sprint5)
+[Sprint 5](https://github.com/WendeldsCoelho/Programa-De-Bolsas-Compass-Uol/tree/main/Sprint_5)
 
 [Sprint 6](https://github.com/WendeldsCoelho/Programa-De-Bolsas-Compass-Uol/tree/main/Sprint_6)
 
